@@ -1,11 +1,7 @@
-Hello Glass is a very basic application written for Google Glass.
+Morehead Captioning
+UNC Glass Explorers
 
-It's voice trigger is "Hello Glass" and it displays a card to say "Hello, Sir! ...Or Ma'am".
-
-I strongly recommend looking at Google's official documentation - https://developers.google.com/glass/develop/gdk/
-
-[Changelog]
-
-GDK Sneak Peak v2 [01/10/2014]
-	- Changed getLiveCard to createLiveCard
-	- Changed setInfo to setFootnote
+This app is designed with the Morehead Planetarium as an aid to those that are hearing impaired by displaying transcriptions to Google Glass.
+The goal is to have two modes for the two types of shows done at the planetarium:
+(1) transcribe script from a pre-written show to be displayed at corresponding timestamps
+(2) capture speech in real-time to be transcribed and displayed immediately for live shows
