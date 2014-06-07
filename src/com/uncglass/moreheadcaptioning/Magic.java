@@ -1,14 +1,9 @@
 package com.uncglass.moreheadcaptioning;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.view.WindowManager;
 
 import com.google.android.glass.app.Card;

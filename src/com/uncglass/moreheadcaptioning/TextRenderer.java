@@ -1,22 +1,16 @@
 package com.uncglass.moreheadcaptioning;
 
 import java.io.BufferedReader;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
-
-import android.app.Activity;
-import android.content.Context;
 import android.os.SystemClock;
-import android.util.Log;
-import android.view.View;
 
 import com.google.android.glass.app.Card;
 
 public class TextRenderer implements Runnable{
 
 	private static String filepath = "/sdcard/DCIM/Camera/";
-
 	
 	Card card;
 	LinkedQueue<Display> mQueue;
@@ -42,8 +36,6 @@ public class TextRenderer implements Runnable{
 			}
 		}
 		
-
-		/////////
 		double prevTime = 0;
 		while (!mQueue.isEmpty()) {
 			try {
@@ -56,14 +48,6 @@ public class TextRenderer implements Runnable{
 				System.exit(-1);
 			}
 		}
-		
-//THIS WORKS
-//		for (int i=0; i<10; i++){
-//			card.setText("hey "+i);
-//			Log.w("THIS APP", card.getText());
-//			//((Activity) mContext).setContentView(card.toView());
-//			SystemClock.sleep(100);
-//		}
 	}
 	
 	/*
@@ -87,6 +71,7 @@ public class TextRenderer implements Runnable{
 //			}
 		}
 	}
+	
 	/*
 	 * Displays the text property of the next node at the correct time
 	 */
@@ -107,11 +92,11 @@ public class TextRenderer implements Runnable{
 			}
 		}
 	}
+	
 	/*
 	 * Parses the file "Output.txt" into nodes with a 'text' and 'time' property
 	 */
 	private void readInput(Queue<Display> q, BufferedReader in) {
-		//while (true) {
 		for (int i=0; i<4; i++){
 			try {
 				String num = in.readLine();						// Read line representing time
@@ -126,8 +111,8 @@ public class TextRenderer implements Runnable{
 				System.exit(-1);
 			}
 		}
-		//}
 	}
+	
 	/*
 	 * Calculates the time to display text in seconds
 	 */
