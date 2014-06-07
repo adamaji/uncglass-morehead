@@ -1,11 +1,4 @@
-/*
- * Magic.java
- * @author Cody Engel
- * http://codyengel.info
- * 
- * This is the service which is started from HelloGlass.java, this is where the magic happens.
- */
-package com.codyengel.helloglass;
+package com.uncglass.moreheadcaptioning;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
