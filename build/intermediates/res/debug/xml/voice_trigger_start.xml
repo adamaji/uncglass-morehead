@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The string used to start the application from the "Okay, Glass" menu -->
+<trigger keyword="@string/start_helloglass" /><!-- From: file:/Users/adam/Documents/UNCglassdev-disabilities/res/xml/voice_trigger_start.xml -->

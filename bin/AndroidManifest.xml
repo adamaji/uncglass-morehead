@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="15" />
+    <uses-permission android:name="com.google.android.glass.permission.DEVELOPMENT" />
 	
     <!-- Note that HelloGlass doesn't not use a theme. Don't use themes. -->
     <application

@@ -19,7 +19,7 @@ public class HelloGlass extends Service {
 	
 	//TimelineManager allows applications to interact with the timeline.
 	//Additional information: https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/timeline/TimelineManager
-	private TimelineManager mTimelineManager;
+	//private TimelineManager mTimelineManager;
 	
 	 //LiveCard lets you create cards as well as publish them to the users timeline.
 	 //Additional information: https://developers.google.com/glass/develop/gdk/reference/com/google/android/glass/timeline/LiveCard
@@ -29,7 +29,7 @@ public class HelloGlass extends Service {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		mTimelineManager = TimelineManager.from(this);
+		//mTimelineManager = TimelineManager.from(this);
 	}
 
 	@Override
@@ -39,7 +39,7 @@ public class HelloGlass extends Service {
 	
 	//onStartCommand is used to start a service from your voice trigger you set up in res/xml/voice_trigger_start.xml
 	public int onStartCommand(Intent intent, int flags, int startId) {
-		mLiveCard = mTimelineManager.createLiveCard(LIVE_CARD_ID);
+		//mLiveCard = mTimelineManager.createLiveCard(LIVE_CARD_ID);
 		
 		Intent i = new Intent(this, Magic.class);
 		i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
